@@ -111,12 +111,20 @@ public class Main extends Activity implements SharedPreferences.OnSharedPreferen
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
+        if (item.getItemId() == R.id.action_settings) {
             Intent intent_pref = new Intent(Main.this, Pref.class);
             startActivity(intent_pref);
             return true;
         }
+
+        if (item.getItemId() == R.id.action_contact) {
+            Intent intent = new Intent(Intent.ACTION_SEND);
+            intent.setType("plain/text");
+            intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"hello@mellowdev.com"});
+            intent.putExtra(Intent.EXTRA_SUBJECT, "Mango App");
+            startActivity(Intent.createChooser(intent, ""));
+        }
+
         return super.onOptionsItemSelected(item);
     }
 

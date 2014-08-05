@@ -89,9 +89,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="20dp"
-        android:onClick="onClick"
-        android:textOff="O"
-        android:textOn="I" />
+        android:onClick="onClick" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
