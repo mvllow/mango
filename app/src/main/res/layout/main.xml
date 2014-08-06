@@ -106,4 +106,13 @@
         android:textColor="#fff"
         android:onClick="onClick" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="v1.0 Developer Preview"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
