@@ -137,6 +137,8 @@ public class Main extends Activity implements SharedPreferences.OnSharedPreferen
     public void onResume() {
         checkStates();
         loadPrefs();
+
+        super.onResume();
     }
 
     @Override
