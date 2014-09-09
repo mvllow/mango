@@ -26,7 +26,7 @@
         android:layout_toStartOf="@+id/space"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:background="#03a9f4"
+        android:background="#e91e63"
         android:textColor="#fff"
         android:layout_marginBottom="10dp"
         android:onClick="onClick" />
@@ -42,7 +42,7 @@
         android:layout_toEndOf="@+id/space"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:background="#03a9f4"
+        android:background="#e91e63"
         android:textColor="#fff"
         android:layout_marginBottom="10dp"
         android:onClick="onClick" />
@@ -58,7 +58,7 @@
         android:layout_alignParentStart="true"
         android:layout_toLeftOf="@+id/space"
         android:layout_toStartOf="@+id/space"
-        android:background="#03a9f4"
+        android:background="#e91e63"
         android:textColor="#fff"
         android:onClick="onClick" />
 
@@ -73,7 +73,7 @@
         android:layout_alignParentEnd="true"
         android:layout_toRightOf="@+id/space"
         android:layout_toEndOf="@+id/space"
-        android:background="#03a9f4"
+        android:background="#e91e63"
         android:textColor="#fff"
         android:onClick="onClick" />
 
@@ -82,14 +82,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/sDnd"
         android:text="@string/s_dnd"
-        android:layout_toEndOf="@+id/bBusy"
         android:layout_below="@+id/bBusy"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="20dp"
-        android:onClick="onClick" />
+        android:onClick="onClick"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:checked="false" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -100,10 +100,35 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:onClick="onClick"
+        android:background="#00ffffff"
+        android:layout_toStartOf="@+id/space"
+        android:layout_toLeftOf="@+id/space" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:background="#e91e63"
-        android:textColor="#fff"
-        android:onClick="onClick" />
+        android:text="@string/t_custom" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/b_custom"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/bWorking"
+        android:layout_alignStart="@+id/bWorking"
+        android:background="#eee" />
 
 </RelativeLayout>

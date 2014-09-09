@@ -14,6 +14,9 @@
     <string name="b_driving">Driving</string>
     <string name="b_working">Working</string>
     <string name="b_disable">Disable</string>
+    <string name="b_custom">Set reply</string>
+
+    <string name="t_custom">I am not available right now.</string>
 
     <string name="s_dnd">Do not disturb</string>
 
