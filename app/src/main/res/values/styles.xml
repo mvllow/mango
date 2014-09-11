@@ -5,12 +5,12 @@
     </style>
 
     <style name="action" parent="@android:style/Widget.Holo.Light.ActionBar">
-        <item name="android:background">#3f51b5</item>
+        <item name="android:background">#00bcd4</item>
         <item name="android:titleTextStyle">@style/actionTitle</item>
     </style>
 
     <style name="actionTitle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
-        <item name="android:textColor">#fff</item>
+        <item name="android:textColor">#ffffff</item>
     </style>
 
 </resources>

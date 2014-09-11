@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Switch;
+import android.widget.TextView;
 
 public class Main extends Activity implements SharedPreferences.OnSharedPreferenceChangeListener {
     public static String sel = "";
@@ -37,34 +38,37 @@ public class Main extends Activity implements SharedPreferences.OnSharedPreferen
         final Button bBusy = (Button) findViewById(R.id.bBusy);
         final Button bDriving = (Button) findViewById(R.id.bDriving);
         final Button bWorking = (Button) findViewById(R.id.bWorking);
+        final Button bCustom = (Button) findViewById(R.id.bCustom);
+        final TextView tCustom = (TextView) findViewById(R.id.tCustom);
         final Switch sDnd = (Switch) findViewById(R.id.sDnd);
 
-        bAway.setBackgroundColor(Color.parseColor("#e91e63"));
-        bBusy.setBackgroundColor(Color.parseColor("#e91e63"));
-        bDriving.setBackgroundColor(Color.parseColor("#e91e63"));
-        bWorking.setBackgroundColor(Color.parseColor("#e91e63"));
+        bAway.setBackgroundColor(Color.parseColor("#eeeeee"));
+        bBusy.setBackgroundColor(Color.parseColor("#eeeeee"));
+        bDriving.setBackgroundColor(Color.parseColor("#eeeeee"));
+        bWorking.setBackgroundColor(Color.parseColor("#eeeeee"));
+        bCustom.setBackgroundColor(Color.parseColor("#eeeeee"));
 
         Sms.people.clear();
 
         switch (v.getId()) {
             case R.id.bAway:
                 reply = "// Auto Reply // I am away right now.";
-                bAway.setBackgroundColor(Color.parseColor("#c2185b"));
+                bAway.setBackgroundColor(Color.parseColor("#cddc39"));
                 break;
 
             case R.id.bBusy:
                 reply = "// Auto Reply // I am busy right now.";
-                bBusy.setBackgroundColor(Color.parseColor("#c2185b"));
+                bBusy.setBackgroundColor(Color.parseColor("#cddc39"));
                 break;
 
             case R.id.bDriving:
                 reply = "// Auto Reply // I am driving right now.";
-                bDriving.setBackgroundColor(Color.parseColor("#c2185b"));
+                bDriving.setBackgroundColor(Color.parseColor("#cddc39"));
                 break;
 
             case R.id.bWorking:
                 reply = "// Auto Reply // I am working right now.";
-                bWorking.setBackgroundColor(Color.parseColor("#c2185b"));
+                bWorking.setBackgroundColor(Color.parseColor("#cddc39"));
                 break;
 
             case R.id.sDnd:
@@ -78,6 +82,11 @@ public class Main extends Activity implements SharedPreferences.OnSharedPreferen
 
             case R.id.bDisable:
                 reply = "";
+                break;
+
+            case R.id.bCustom:
+                reply = "// Auto Reply // " + tCustom.getText().toString();
+                bCustom.setBackgroundColor(Color.parseColor("#cddc39"));
                 break;
         }
     }

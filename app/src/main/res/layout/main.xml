@@ -26,8 +26,7 @@
         android:layout_toStartOf="@+id/space"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:background="#e91e63"
-        android:textColor="#fff"
+        android:background="#eeeeee"
         android:layout_marginBottom="10dp"
         android:onClick="onClick" />
 
@@ -42,8 +41,7 @@
         android:layout_toEndOf="@+id/space"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:background="#e91e63"
-        android:textColor="#fff"
+        android:background="#eeeeee"
         android:layout_marginBottom="10dp"
         android:onClick="onClick" />
 
@@ -58,8 +56,7 @@
         android:layout_alignParentStart="true"
         android:layout_toLeftOf="@+id/space"
         android:layout_toStartOf="@+id/space"
-        android:background="#e91e63"
-        android:textColor="#fff"
+        android:background="#eeeeee"
         android:onClick="onClick" />
 
     <Button
@@ -73,8 +70,7 @@
         android:layout_alignParentEnd="true"
         android:layout_toRightOf="@+id/space"
         android:layout_toEndOf="@+id/space"
-        android:background="#e91e63"
-        android:textColor="#fff"
+        android:background="#eeeeee"
         android:onClick="onClick" />
 
     <Switch
@@ -110,7 +106,7 @@
         android:layout_height="wrap_content"
         android:inputType="textMultiLine"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/tCustom"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -123,12 +119,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/b_custom"
-        android:id="@+id/button"
+        android:id="@+id/bCustom"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignLeft="@+id/bWorking"
         android:layout_alignStart="@+id/bWorking"
-        android:background="#eee" />
+        android:background="#eeeeee"
+        android:onClick="onClick" />
 
 </RelativeLayout>
